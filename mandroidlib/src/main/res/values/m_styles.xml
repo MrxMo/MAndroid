@@ -1,0 +1,74 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="MAppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <!--背景透明，不设滑动关闭时背景就是黑的。-->
+        <item name="android:windowIsTranslucent">true</item>
+        <!--Activity右滑进出的动画，觉得这个不好看随便换成自己的-->
+        <item name="android:windowAnimationStyle">@style/SlideRightAnimation</item>
+    </style>
+
+    <style name="MMainTheme" parent="MAppTheme">
+        <!--就是关掉这个Activity的透明背景-->
+        <item name="android:windowIsTranslucent">false</item>
+    </style>
+
+    <style name="MFullScreenTheme" parent="MAppTheme">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="MStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <!-- listview style -->
+    <style name="MListViewStyle" parent="MStyle">
+        <item name="android:cacheColorHint">@android:color/transparent</item>
+        <item name="android:fadingEdge">none</item>
+        <item name="android:fastScrollEnabled">false</item>
+        <item name="android:footerDividersEnabled">false</item>
+        <item name="android:headerDividersEnabled">false</item>
+        <item name="android:smoothScrollbar">true</item>
+        <item name="android:divider">@null</item>
+    </style>
+
+    <style name="MRecyclerViewStyle" parent="MStyle">
+        <item name="android:scrollbars">vertical</item>
+    </style>
+
+    <style name="MItemStyle" parent="MStyle"></style>
+
+    <style name="MDividerStyle" parent="MStyle">
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">#e6e6e6</item>
+    </style>
+
+    <style name="MDialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:backgroundDimAmount">0.2</item>
+    </style>
+
+    <style name="MTextView">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#333333</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:lineSpacingExtra">0dp</item>
+    </style>
+
+    <style name="MSingleLine" parent="MTextView">
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="MButton" parent="MTextView">
+
+    </style>
+</resources>
