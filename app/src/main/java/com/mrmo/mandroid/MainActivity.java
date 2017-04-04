@@ -1,5 +1,6 @@
 package com.mrmo.mandroid;
 
+import android.graphics.Color;
 import android.os.Bundle;
 
 import com.mrmo.mandroidlib.app.activity.MActivity;
